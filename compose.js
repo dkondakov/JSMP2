@@ -1,11 +1,6 @@
 function compose(...args) {
     return param => {
-        let result = param;
-        args.forEach(fn => {
-                result = fn(result);
-            }
-            );
-        return result;
+        return args.reduce((result, fn)  => fn(result), param);
     };
 }
 
