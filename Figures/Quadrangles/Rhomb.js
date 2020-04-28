@@ -1,15 +1,10 @@
 import {Quadrangle} from './Quadrangle';
 
 export class Rhomb extends Quadrangle {
-    constructor(points) {
+    constructor() {
         super();
      
         this.type = 'Rhomb';
-        this.points = points;
-    }   
-   
-    getPerimeter() {
-        return;
     }
 
     getSquare() {

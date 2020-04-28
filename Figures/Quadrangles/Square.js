@@ -1,16 +1,11 @@
 import {Quadrangle} from './Quadrangle';
 
 export class Square extends Quadrangle {
-    constructor(points) {
+    constructor() {
         super();
      
         this.type = 'Square';
-        this.points = points;
     }   
-   
-    getPerimeter() {
-        return;
-    }
 
     getSquare() {
         return;
