@@ -1,10 +1,10 @@
 import {Figure} from '../Figure';
 
 export class Quadrangle extends Figure {
-    constructor(p1, p2, p3, p4) {
+    constructor() {
         super();
              
-        this.points = [p1, p2, p3, p4];
+        this.type = 'Quadrangle';
     }   
    
     getPerimeter() {

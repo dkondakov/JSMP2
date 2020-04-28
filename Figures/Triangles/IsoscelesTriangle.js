@@ -6,10 +6,6 @@ export class IsoscelesTriangle extends Triangle {
      
         this.type = 'Isosceles triangle';
     }   
-   
-    getType() {
-        
-    }
 
     getSquare() {
         return;

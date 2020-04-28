@@ -6,10 +6,6 @@ export class EquilateralTriangle extends Triangle {
      
         this.type = 'Equilateral triangle';
     }   
-   
-    getType() {
-        
-    }
 
     getSquare() {
         return;

@@ -6,10 +6,6 @@ export class RightTriangle extends Triangle {
      
         this.type = 'Right triangle';
     }   
-   
-    getType() {
-        
-    }
 
     getSquare() {
         return;

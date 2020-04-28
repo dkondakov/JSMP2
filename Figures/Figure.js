@@ -1,4 +1,7 @@
 export class Figure {
+    /**
+     * @param  {...Point} points 
+     */
     constructor(...points) {
         this.type = 'Figure';
         this.points = points;

@@ -2,10 +2,10 @@ import { Figure } from '../Figure';
 import { Measurements } from '../Measurements';
 
 export class Triangle extends Figure {
-    constructor(p1, p2, p3) {
+    constructor() {
         super();
 
-        this.points = [p1, p2, p3];
+        this.type = 'Triangle';
     }   
    
     getPerimeter() {
