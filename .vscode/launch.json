@@ -10,7 +10,11 @@
             "name": "Debug",
             "program": "${workspaceFolder}/src/figures/main.js",
             "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/babel-node",
-            "runtimeArgs": ["--nolazy"]
+            "runtimeArgs": ["--nolazy"],
+            "skipFiles": [
+                "${workspaceFolder}/node_modules/**/*.js",
+                "<node_internals>/**/*.js"               
+              ]
           }
     ]
 }

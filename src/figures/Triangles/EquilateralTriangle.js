@@ -1,10 +1,11 @@
 import { Triangle } from './Triangle';
 
 export class EquilateralTriangle extends Triangle {
-    constructor() {
+    constructor(points) {
         super();
      
         this.type = 'Equilateral triangle';
+        this.points = points;
     }   
 
     getSquare() {

@@ -3,10 +3,16 @@ import { FigureFactory } from "./FigureFactory";
 
 const paramsCircle = [new Point(0, 0), 3];
 const paramsTriangle = [new Point(0, 0), new Point(0, 1), new Point(1, 0)];
-const paramsQuadrange = [new Point(0, 0), new Point(0, 1), new Point(1, 1), new Point(1, 0)];
+const paramsQuadrangle = [new Point(0, 0), new Point(0, 1), new Point(1, 1), new Point(1, 0)];
 
-const fact = new FigureFactory();
+const factory = new FigureFactory();
 
-const fig = fact.create(paramsCircle);
+const circle = factory.create(paramsCircle);
+const triangle = factory.create(paramsTriangle);
+const quadrangle = factory.create(paramsQuadrangle);
 
-console.log(fig.getType());
+console.log(circle.getType());
+console.log(triangle.getType());
+console.log(triangle.getPerimeter());
+console.log(triangle.getSquare());
+console.log(quadrangle.getType());
