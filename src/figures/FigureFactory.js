@@ -2,8 +2,8 @@ import { Circle } from "./Circle";
 import { IsoscelesTriangle } from "./Triangles/IsoscelesTriangle";
 import { Rectangle } from "./Quadrangles/Rectangle";
 
-export static class FigureFactory {
-    static create(...args) {
+export class FigureFactory {
+    create(...args) {
         switch (args.length) {
             case 2:
                 return new Circle(args);

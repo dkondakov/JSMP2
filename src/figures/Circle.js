@@ -5,7 +5,7 @@ export class Circle extends Figure {
      * @param {...Point} points
      * @param {number} radius 
      */
-    constructor(...points, radius) {
+    constructor(radius, ...points) {
         super();
 
         this.type = 'Circle';
