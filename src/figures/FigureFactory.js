@@ -1,6 +1,6 @@
 import { Circle } from "./Circle";
 import { IsoscelesTriangle } from "./Triangles/IsoscelesTriangle";
-import { Rectangle } from "./Quadrangles/Rectangle";
+import { Square } from "./Quadrangles/Square";
 import { Triangle } from "./Triangles/Triangle";
 import { EquilateralTriangle } from "./Triangles/EquilateralTriangle";
 import { RightTrianlge } from "./Triangles/RightTriangle"
@@ -13,19 +13,20 @@ export class FigureFactory {
             case 3:
                 const triangle = new Triangle(args);
 
-                switch (triangle.getType()){
+                switch (triangle.getTypeBySides()) {
                     case 'Isosceles':
                         return new IsoscelesTriangle(args);
                     case 'Equilateral':
                         return new EquilateralTriangle(args);
-                    default:
+                    case 'Right':
                         return new RightTrianlge(args);
-                }
-                
+                    default:
+                        return triangle;
+                };
             case 4:
-                return new Rectangle(args);
+                return new Square(args);
             default:
                 throw new Error('Incorrect amount of arguments!');
-        }
+        };
     }
 }

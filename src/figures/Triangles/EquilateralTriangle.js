@@ -7,8 +7,4 @@ export class EquilateralTriangle extends Triangle {
         this.type = 'Equilateral triangle';
         this.points = points;
     }   
-
-    getSquare() {
-        return;
-    }
 }

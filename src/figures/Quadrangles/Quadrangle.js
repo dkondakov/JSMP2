@@ -1,20 +1,18 @@
-import {Figure} from '../Figure';
+import { Figure } from '../Figure';
+import Measurements from '../Measurements';
 
 export class Quadrangle extends Figure {
-    constructor() {
+    constructor(points) {
         super();
              
         this.type = 'Quadrangle';
+        this.points = points;
     }   
    
     getPerimeter() {
-        return Measurements.getDistance(points[0], points[1]) +
-                Measurements.getDistance(points[1], points[2]) +
-                Measurements.getDistance(points[2], points[3]) +
-                Measurements.getDistance(points[0], points[3]);
-    }
-
-    getSquare() {
-        return;
+        return Measurements.getDistance(this.points[0], this.points[1]) +
+                Measurements.getDistance(this.points[1], this.points[2]) +
+                Measurements.getDistance(this.points[2], this.points[3]) +
+                Measurements.getDistance(this.points[0], this.points[3]);
     }
 }

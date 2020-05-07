@@ -1,23 +1,19 @@
 import {Figure} from './Figure';
 
 export class Circle extends Figure {
-    /**
-     * @param {...Point} points
-     * @param {number} radius 
-     */
-    constructor(radius, ...points) {
+    constructor(args) {
         super();
 
         this.type = 'Circle';
-        this.points = points;
-        this.radius = radius;
+        this.points = [args[0]];
+        this.radius = [args[1]];
     }   
    
     getPerimeter() {
-        return 2*Math.PI*this.radius;
+        return parseFloat((2*Math.PI*this.radius).toFixed(1));
     }
 
     getSquare() {
-        return Math.PI*R**2;
+        return parseFloat((Math.PI*this.radius**2).toFixed(1));
     }
 }

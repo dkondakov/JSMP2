@@ -6,5 +6,5 @@ export class RightTriangle extends Triangle {
      
         this.type = 'Right triangle';
         this.points = points;
-    }   
+    }
 }

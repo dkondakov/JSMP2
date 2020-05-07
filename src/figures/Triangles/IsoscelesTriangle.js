@@ -7,5 +7,4 @@ export class IsoscelesTriangle extends Triangle {
         this.type = 'Isosceles triangle';
         this.points = points;
     }   
-    
 }
