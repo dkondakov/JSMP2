@@ -1,5 +1,7 @@
 export class Figure {
     constructor() {
+        if(new.target === Figure)
+            throw new TypeError ("Creating of a Figure class instance is prohibited!");
         this.type = 'Figure';
     }
 
